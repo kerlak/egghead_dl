@@ -22,7 +22,7 @@ defmodule EggheadScrapper do
         results["hits"]
             |> Enum.map(fn(item) -> 
                 %{
-                    title: item["title"],
+                    title: item["title"] |> String.replace("/", "-"),
                     url: item["url"],
                     lessons: []
                 }
@@ -40,7 +40,7 @@ defmodule EggheadScrapper do
 
         Poison.decode!(element)["course"]["course"]["lessons"]
         |> Enum.map(fn(lesson) ->
-            %{title: lesson["title"], media_url: lesson["media_urls"]["hls_url"]}
+            %{title: lesson["title"] |> String.replace("/", "-"), media_url: lesson["media_urls"]["hls_url"]}
         end)
     end
 
