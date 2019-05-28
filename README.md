@@ -18,6 +18,8 @@ config :algolia,
 $ mix deps.get
 ```
 
+## Execute
+
 ```bash
 $ iex -S mix
 
@@ -27,5 +29,3 @@ $ iex -S mix
   # Download coursers related to <some_filter>
   iex> EggheadDl.save("Dart")
 ```
-
-## Execute
