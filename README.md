@@ -1,4 +1,9 @@
 # EggheadDl
+With EggheadDl you can download the public videos for offline views.
+Please, mind the [Terms and Conditions of Use](https://egghead.io/privacy)
+
+Remember that these guys make a great job and invest lots of time to provide these useful information.
+:star:[Become a pro member!](https://egghead.io/pricing) and level-up your career:school_satchel:
 
 ## Requirements
 `ffmpeg`
