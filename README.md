@@ -1,5 +1,8 @@
 # EggheadDl
 
+## Requirements
+`ffmpeg`
+
 ## Setup
 
 Set algolia credentials on `config.exs` file:
@@ -18,7 +21,7 @@ config :algolia,
 $ mix deps.get
 ```
 
-## Execute
+## Execution
 
 ```bash
 $ iex -S mix
